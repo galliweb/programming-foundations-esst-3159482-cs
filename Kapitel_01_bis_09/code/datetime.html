@@ -10,12 +10,16 @@
     Bitte öffnen Sie die "Entwicklertools" bzw. "Werkzeuge für Web-Entwickler" mit <strong>Strg + Shift + I</strong> 
     und klicken anschließend auf <strong>Konsole</strong>.
     <script>
+        let yesterday = new Date();
         let today = new Date();
+        let tomorrow = new Date();
 
         console.log( 
             "Es ist " 
-            + today.getHours() + ":" 
-            + today.getMinutes().toString().padStart( 2, '0' ) + " Uhr." );
+            + today.getHours().toString().padStart(2, '0') + ":" 
+            + today.getMinutes() + " Uhr.");
+
+            //+ today.getMinutes().toString().padStart( 2, '0' ) + " Uhr." );
 </script>
 </body>
 </html>
